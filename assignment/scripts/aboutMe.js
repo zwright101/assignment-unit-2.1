@@ -29,12 +29,11 @@ let food = "Italian";
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = "2";
 
-
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendPets = "0";
+let friendPets = "4";
 
 // 11 - Add two pets to your `pets` variable
-pets = "6";
+pets = "3";
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = "6";
@@ -77,6 +76,13 @@ else if(pets >= allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+let mostPets;
+if (pets > friendPets){
+    mostPets = pets
+} else if(friendPets > pets){
+    mostPets = friendPets
+}
+console.log(mostPets);
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -85,6 +91,24 @@ else if(pets >= allowedPets){
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
+const expr = 'luckyNumber'
+switch ( expr ){
+    case '1':
+        console.log( "First is the worst" );
+        break
+    case '2':
+        console.log( "Second is the best" );
+        break
+    case '3':
+        console.log( "Third is the one with the polda dot dress" );
+        break
+    default:
+        console.log( "Luck is what happens when preparation meets opportunity" );            
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+// adventurous = true;
+// ( adventurous === true ) ? "Adventures are great!" : "How about we stay home"
 
 
